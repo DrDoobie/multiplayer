@@ -53,9 +53,11 @@ public class PlayerMovement : NetworkBehaviour
 
         if(isAnimated)
         {
-            animator.SetBool("isWalking", movePos.magnitude > 0.1f ? true : false);
+            animator.SetBool("isWalking", movePos.magnitude > 0.1f && !isRunning ? true : false);
 
             animator.SetBool("isIdle", movePos.magnitude == 0.0f ? true : false);  
+
+            animator.SetBool("isRunning", moveSpeed >= runSpeed ? true : false);
         }
 
         //Running
