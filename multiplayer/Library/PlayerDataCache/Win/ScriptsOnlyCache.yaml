@@ -1,15 +1,12 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - EventReferencer
     - MouseLook
     - PlayerCombat
     - PlayerMovement
     Mirror.Components.dll:
     - Mirror.NetworkAnimator
     - Mirror.NetworkTransform
-    Mirror.Editor.dll:
-    - Mirror.NetworkBehaviourInspector
     Mirror.dll:
     - Mirror.NetworkIdentity
     - Mirror.NetworkManager
@@ -66,8 +63,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
-    - Class: 90
-      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -104,8 +99,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13716}
     - Class: 114
       Script: {instanceID: 14046}
-    - Class: 114
-      Script: {instanceID: 27756}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 137
@@ -631,7 +624,7 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: 42069e526a231d1dd9a4e0ffe96a0888
+      Hash: 21dea21722b164d357b7eb0ca2b10097
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerCombat
@@ -709,7 +702,7 @@ ScriptsOnlyBuild:
     className: UIServerStatusSlot
   - hash:
       serializedVersion: 2
-      Hash: 369f03fa59223db951dc1f0da91b23b9
+      Hash: baf74b7db4728dadb0030d7a54dfc8a6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMovement

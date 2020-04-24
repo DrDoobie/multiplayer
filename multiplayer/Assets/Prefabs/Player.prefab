@@ -442,9 +442,9 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   isRunning: 0
-  walkSpeed: 12
+  walkSpeed: 8
   runSpeed: 20
-  jumpHeight: 3
+  jumpHeight: 8
   gravityForce: -9.81
   cam: {fileID: 2868523720844676458}
   controller: {fileID: 2868523720382182819}
