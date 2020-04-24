@@ -444,7 +444,7 @@ MonoBehaviour:
   isRunning: 0
   walkSpeed: 8
   runSpeed: 20
-  jumpHeight: 8
+  jumpHeight: 3
   gravityForce: -9.81
   cam: {fileID: 2868523720844676458}
   controller: {fileID: 2868523720382182819}
@@ -669,6 +669,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7514810463385282151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5229743231230056582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46b34a4608e3b3d4ca0941001b66c360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj: {fileID: 2868523720382182816}
 --- !u!1001 &4301547687435026831
 PrefabInstance:
   m_ObjectHideFlags: 0
