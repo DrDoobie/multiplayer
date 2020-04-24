@@ -402,7 +402,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 6932972456495489444}
+  - {fileID: 5523915606364614038}
   - {fileID: 2868523720844676456}
   - {fileID: 2868523720920892944}
   - {fileID: 1730974678396365291}
@@ -441,7 +441,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  moveSpeed: 12
+  isRunning: 0
+  walkSpeed: 12
+  runSpeed: 20
   jumpHeight: 3
   gravityForce: -9.81
   cam: {fileID: 2868523720844676458}
@@ -451,7 +453,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   isAnimated: 1
-  animator: {fileID: 1061968214112570590}
+  animator: {fileID: 2459774893467484396}
+  networkAnimator: {fileID: 2384709727353427556}
   groundCheckRadius: 0.4
 --- !u!114 &-7303528314702367080
 MonoBehaviour:
@@ -468,7 +471,8 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   isAnimated: 1
-  animator: {fileID: 1061968214112570590}
+  animator: {fileID: 2459774893467484396}
+  networkAnimator: {fileID: 2384709727353427556}
 --- !u!114 &-6037972964254851599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -517,7 +521,7 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0
   clientAuthority: 1
-  animator: {fileID: 1061968214112570590}
+  animator: {fileID: 2459774893467484396}
 --- !u!1 &2868523720844676457
 GameObject:
   m_ObjectHideFlags: 0
@@ -646,7 +650,20 @@ Transform:
   m_Father: {fileID: 2868523720382182818}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &2687639050262842046
+--- !u!114 &5217307709725261959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8859629551203884933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46b34a4608e3b3d4ca0941001b66c360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj: {fileID: 2868523720382182816}
+--- !u!1001 &707723974968133260
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -745,15 +762,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 769dd5ce8283c8349be06bd63f6a803a, type: 3}
---- !u!95 &1061968214112570590 stripped
+--- !u!95 &2459774893467484396 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: -6057140222963153312, guid: 769dd5ce8283c8349be06bd63f6a803a,
     type: 3}
-  m_PrefabInstance: {fileID: 2687639050262842046}
+  m_PrefabInstance: {fileID: 707723974968133260}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &6932972456495489444 stripped
+--- !u!4 &5523915606364614038 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 769dd5ce8283c8349be06bd63f6a803a,
     type: 3}
-  m_PrefabInstance: {fileID: 2687639050262842046}
+  m_PrefabInstance: {fileID: 707723974968133260}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8859629551203884933 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 769dd5ce8283c8349be06bd63f6a803a,
+    type: 3}
+  m_PrefabInstance: {fileID: 707723974968133260}
   m_PrefabAsset: {fileID: 0}
